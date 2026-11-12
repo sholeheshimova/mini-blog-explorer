@@ -1,0 +1,20 @@
+.postsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+}
+
+.postsContainer > * {
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .postsContainer > * {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
